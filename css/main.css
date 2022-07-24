@@ -99,6 +99,25 @@ a.button:hover {
   -o-transform: translate3d(0px, -5px, 50px);
 }
 
+.dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.dot.g {
+  background-color: var(--main-color, #519259);
+}
+
+.dot.y {
+  background-color: var(--sec-color, #febd2e);
+}
+
 /* End Component */
 
 /* Start Header */
@@ -308,6 +327,7 @@ header .mob-list ul li.sub-list:hover ul {
 .landing {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -526,6 +546,36 @@ header .mob-list ul li.sub-list:hover ul {
 .landing .main-photo img {
   width: 100%;
   vertical-align: top;
+}
+
+/* @media (max-width: 768px) {
+  .landing .dot {
+    display: none;
+  }
+} */
+
+.landing .dot.g {
+  bottom: 0;
+  left: 50%;
+}
+
+@media (max-width: 768px) {
+  .landing .dot.g {
+    top: 20%;
+    right: 30px;
+    left: auto;
+  }
+}
+
+.landing .dot.y {
+  top: 50%;
+  left: 45%;
+}
+
+@media (max-width: 768px) {
+  .landing .dot.y {
+    display: none;
+  }
 }
 
 /* End Landing */
