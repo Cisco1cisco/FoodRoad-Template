@@ -1219,3 +1219,110 @@ header .mob-list ul li.sub-list:hover ul {
 }
 
 /* End Food */
+
+/* Start Customers */
+
+.customers {
+  padding-top: var(--section-pad, 100px);
+  padding-bottom: var(--section-pad, 100px);
+  position: relative;
+}
+
+.customers .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .customers .container {
+    flex-direction: column;
+  }
+}
+
+.customers .container > div {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+@media (max-width: 768px) {
+  .customers .image {
+    order: 2;
+  }
+}
+
+.customers .image img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .customers .text .main-title h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .customers .text .main-title h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .customers .text {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+.customers .text .main-title p {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.customers .text .porfile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.customers .text .porfile .photo {
+  margin-right: 10px;
+}
+
+.customers .text .porfile .cont h3 {
+  font-size: 20px;
+  color: var(--bl-color, #000);
+  margin-bottom: 5px;
+}
+
+.customers .text .porfile .cont span {
+  color: var(--para-color, rgba(0, 0, 0 60%));
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.customers .text .rate i {
+  color: var(--sec-color, #febd2e);
+}
+
+.customers .text .rate span {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.customers .plant {
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+.customers .dot.y {
+  top: 0;
+  left: 50%;
+}
+
+.customers .dot.y:last-of-type {
+  top: auto;
+  bottom: 10px;
+  left: 20px;
+}
+
+/* End Customers */
