@@ -1326,3 +1326,90 @@ header .mob-list ul li.sub-list:hover ul {
 }
 
 /* End Customers */
+
+/* Start Order */
+
+.order {
+  padding-top: var(--section-pad, 100px);
+  padding-bottom: var(--section-pad, 100px);
+}
+
+.order .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .order .container {
+    flex-direction: column;
+  }
+}
+
+.order .container > div {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+@media (max-width: 768px) {
+  .order .text {
+    margin-bottom: 30px;
+  }
+}
+
+.order .text .main-title h1 {
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .order .text .main-title h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.order .text .app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.order .text .app .feild {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.order .text .app .feild input {
+  width: 100%;
+  padding: 10px 30px 10px 40px;
+  border: 1px solid var(--para-color, rgba(0, 0, 0, 60%));
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  outline: none;
+}
+
+@media (min-width: 1199px) {
+  .order .text .app .feild input {
+    width: 90%;
+  }
+}
+
+.order .text .app .feild i {
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  color: var(--para-color, rgba(0, 0, 0, 60%));
+}
+
+.order .image img {
+  width: 100%;
+}
+
+/* End Order */
