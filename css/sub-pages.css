@@ -1,0 +1,159 @@
+/* Start Variables */
+
+:root {
+  --main-color: #519259;
+  --sec-color: #febd2e;
+  --bl-color: #000;
+  --para-color: rgba(0, 0, 0, 60%);
+  --trans-dur: 0.3s;
+  --para-lineh: 1.5;
+  --section-pad: 100px;
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Global Rules */
+
+/* Start Component */
+/* End Component */
+
+/* Start About */
+
+.about {
+  padding-top: var(--section-pad, 100px);
+  padding-bottom: var(--section-pad, 100px);
+  position: relative;
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .about .container {
+    flex-direction: column;
+  }
+}
+
+.about .container > div {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .about .container > div {
+    width: 100%;
+  }
+}
+
+.about .text h1 {
+  font-size: 60px;
+  font-weight: 400;
+  color: var(--bl-color, #000);
+  margin: auto 0 40px;
+}
+
+@media (max-width: 991px) {
+  .about .text h1 {
+    font-size: 50px;
+  }
+}
+
+.about .text p {
+  color: var(--para-color, rgba(0, 0, 0, 60%));
+  line-height: var(--para-lineh, 1.5);
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  .about .text p {
+    font-size: 16px;
+  }
+}
+
+.about .image img {
+  width: 100%;
+}
+
+.about > img:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .about > img:first-of-type {
+    right: 0;
+    left: auto;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+.about > img:last-of-type {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+
+/* End About */
