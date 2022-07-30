@@ -157,3 +157,172 @@ ul {
 }
 
 /* End About */
+
+/* Strat Door */
+
+.door {
+  padding-top: var(--section-pad, 100px);
+  padding-bottom: var(--section-pad, 100px);
+}
+
+.door .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .door .container {
+    flex-direction: column;
+  }
+}
+
+.door .container > div {
+  flex-basis: 50%;
+}
+
+.door .photo {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .door .photo {
+    order: 2;
+  }
+}
+
+.door .photo .image {
+  position: relative;
+}
+
+.door .photo .image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 60%);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.door .photo .image img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.door .photo .badge {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  background-color: white;
+  z-index: 1;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .door .photo .badge {
+    right: 0;
+  }
+}
+
+.door .photo .user {
+  background-color: white;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  padding: 10px;
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .door .photo .user {
+    width: 90%;
+    bottom: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .door .photo .user {
+    bottom: 10px;
+  }
+}
+
+.door .photo .user .profile {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.door .photo .user .profile img {
+  margin-right: 20px;
+}
+
+.door .photo .user .profile h5 {
+  font-size: 18px;
+  color: var(--bl-color, #000);
+  margin-bottom: 5px;
+}
+
+.door .photo .user .profile .rate {
+  color: var(--sec-color, #febd2e);
+}
+
+.door .photo .user p {
+  color: var(--para-color, rgba(0, 0, 0, 60%));
+  line-height: var(--para-lineh, 1.5);
+}
+
+.door .text {
+  padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+  .door .text {
+    order: 1;
+    margin-bottom: 50px;
+  }
+}
+
+.door .text h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--bl-color, #000);
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .door .text h1 {
+    font-size: 32px;
+  }
+}
+
+.door .text p {
+  color: var(--para-color, rgba(0, 0, 0, 60%));
+  margin-bottom: 20px;
+  line-height: var(--para-lineh, 1.5);
+}
+
+.door .text .watch {
+  margin-top: 55px;
+}
+
+.door .text .watch span {
+  cursor: pointer;
+}
+
+.door .text .watch span i {
+  color: var(--main-color, #519259);
+  margin-right: 20px;
+}
+
+/* End Door */
