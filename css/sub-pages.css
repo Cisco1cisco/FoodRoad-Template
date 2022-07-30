@@ -310,6 +310,7 @@ ul {
   color: var(--para-color, rgba(0, 0, 0, 60%));
   margin-bottom: 20px;
   line-height: var(--para-lineh, 1.5);
+  font-size: 20px;
 }
 
 .door .text .watch {
